@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="ru" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="ru" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-migrate.min.js"></script>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+    <script src="https://use.fontawesome.com/702a6b82cc.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">     -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <!-- CSS Header and Footer ???????????????????????????--> 
+   <!--  <link rel="stylesheet" type="text/css" href="/bitrix/templates/apsel_business_strawberry/assets/css/headers/header-v6.css?147826530635391" />
+    <link rel="stylesheet" type="text/css" href="/bitrix/templates/apsel_business_strawberry/assets/css/footers/footer-v1.css?14782653061173" /> -->
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css" href="css-plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/custom-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/revolution-slider.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/cubeportfolio.min.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/custom-cubeportfolio.css">
+    <link rel="stylesheet" type="text/css" href="css-plugins/plugins.css">
+
+    <!-- CSS Theme -->
+
+    <link rel="stylesheet" type="text/css" href="templates/theme-skins-dark.css">
+    <link rel="stylesheet" type="text/css" href="templates/colors.css" id="style_color">
+    <link rel="shortcut icon" href="/bitrix/templates/apsel_business_strawberry/favicon.ico">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" type="text/css" href="css-plugins/style-switcher.css">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" type="text/css" href="templates/custom.css">
+
+    <!-- <script>
+        var SITE_TEMPLATE_PATH = "/bitrix/templates/apsel_business_strawberry";
+        var SITE_DIR = "/";
+    </script> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="услуги(проектирование нестандартных изделий,изготовление деталей по чертежам заказчика,токарные роботы,сварочные роботы,изготовление металокострукций любой сложности,изготовление ферм,ангаров,весовых платформ,плазменная резка чпу,порошковая покраска,изготовление нестандартных механизмов,механизация предприятий деревообрабатываещего комплекса,изготовление рольгангов по персональному заказу">
+    <meta name="description" content="Здесь нужно написать короткий текст об услугах/продуктах вашей компании, который будет попадать в результат выдачи поисковых систем. Например, Google, Яндекс и др.">    
+ <!--    <script type="text/javascript">
+        if (!window.BX) window.BX = {
+            message: function(mess) {
+                if (typeof mess == 'object')
+                    for (var i in mess) BX.message[i] = mess[i];
+                return true;
+            }
+        };
+    </script> -->
+ <!--    <script type="text/javascript">
+        (window.BX || top.BX).message({
+            'JS_CORE_LOADING': 'Загрузка...',
+            'JS_CORE_NO_DATA': '- Нет данных -',
+            'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+            'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+            'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+            'JS_CORE_WINDOW_SAVE': 'Сохранить',
+            'JS_CORE_WINDOW_CANCEL': 'Отменить',
+            'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+            'JS_CORE_H': 'ч',
+            'JS_CORE_M': 'м',
+            'JS_CORE_S': 'с',
+            'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+            'JSADM_AI_ALL_NOTIF': 'Показать все',
+            'JSADM_AUTH_REQ': 'Требуется авторизация!',
+            'JS_CORE_WINDOW_AUTH': 'Войти',
+            'JS_CORE_IMAGE_FULL': 'Полный размер'
+        });
+    </script>
+    <script type="text/javascript">
+        (window.BX || top.BX).message({
+            'LANGUAGE_ID': 'ru',
+            'FORMAT_DATE': 'DD.MM.YYYY',
+            'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+            'COOKIE_PREFIX': 'BITRIX_SM',
+            'SERVER_TZ_OFFSET': '10800',
+            'SITE_ID': 's1',
+            'SITE_DIR': '/',
+            'USER_ID': '',
+            'SERVER_TIME': '1495438477',
+            'USER_TZ_OFFSET': '0',
+            'USER_TZ_AUTO': 'Y',
+            'bitrix_sessid': 'ab9fdb304840a8c480591812fb2c485e'
+        });
+    </script> -->
+
+
+    <!-- <script type="text/javascript" src="js/kernel_main.js"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_db.js?147826482011131"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.js?147826482017555"></script>
+    <script type="text/javascript">
+        BX.setJSList(['/bitrix/js/main/core/core.js?1478264820117733', '/bitrix/js/main/core/core_ajax.js?147826482035602', '/bitrix/js/main/json/json2.min.js?14782648203467', '/bitrix/js/main/core/core_ls.js?147826482010430', '/bitrix/js/main/core/core_fx.js?147826482016538', '/bitrix/js/main/core/core_popup.js?147826482041088', '/bitrix/components/bitrix/search.title/script.js?14782649569371']);
+    </script> -->
+
+
+   <!--  <script type="text/javascript" src="/bitrix/cache/js/s1/apsel_business_strawberry/template_115267b21570efda548aa92c804a72d7/template_115267b21570efda548aa92c804a72d7.js?14954176329662"></script>
+    <script type="text/javascript">
+        var _ba = _ba || [];
+        _ba.push(["aid", "2ec90f33dc1e47fbdae383a0834a60f9"]);
+        _ba.push(["host", "www.gzmk.com.ua"]);
+        (function() {
+            var ba = document.createElement("script");
+            ba.type = "text/javascript";
+            ba.async = true;
+            ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ba, s);
+        })();
+    </script> -->
+
+
+    <title>ООО "Гребенковский завод металлоконструкций"</title>
+</head>
+<body class="header-fixed header-fixed-space">
+    <div class="wrapper">
+        <div id="page-preloader">
+            <div class="tp-loader spinner0">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <!--=== Header v6 ===-->
+        <div class="header-v6 header-classic-white header-sticky">
+            <div id="panel">
+            </div>
+            <!-- Topbar -->
+            <div class="topbar-v1 visible-lg visible-md">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" style="float: right;">
+                            <ul class="list-inline top-v1-contacts">
+                                <li>
+                                    <i class="fa fa-phone"></i> +38 (044) 539 37 30 | +38 (067) 465 11 05</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6" style="display: none;">
+
+                            <ul class="list-inline top-v1-data">
+
+                                <li><a href="/auth/?register=yes"><i class="fa fa-user"></i>Регистрация</a></li>
+                                <li><a href="/auth/"><i class="fa fa-lock"></i>Войти</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Topbar -->
+<!-- Navbar -->
+<div class="navbar mega-menu" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="menu-container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+            <!-- Navbar Brand -->
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img class="shrink-logo" src="img/bx_default_logo.png" width="160" height="45">
+                </a>
+            </div>
+            <!-- ENd Navbar Brand -->
+
+            <!-- Header Inner Right -->
+            <div class="header-inner-right">
+                <ul class="menu-icons-list">
+
+                    <li class="menu-icons">
+                        <i class="menu-icons-style search search-close search-btn fa fa-search"></i>
+                        <div class="search-open">
+                            <form action="/search/index.php">
+                                <div id="title-search" class="container">
+                                    <input id="title-search-input" placeholder="Введите текст для поиска..." type="text" name="q" value="" autocomplete="off" class="animated fadeIn form-control" />
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <script>
+                        BX.ready(function() {
+                            new JCTitleSearch({
+                                'AJAX_PAGE': '/',
+                                'CONTAINER_ID': 'title-search',
+                                'INPUT_ID': 'title-search-input',
+                                'MIN_QUERY_LEN': 2
+                            });
+                        });
+                    </script>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- End Header Inner Right -->
+        <!--=== End Header v6 ===-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <div class="menu-container">
+
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown active"><a href="company.html" class="dropdown-toggle" 1data-toggle="dropdown">Компания</a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="about-us.html">О нас</a></li>
+                            <li><a href="requisites.html">Реквизиты</a></li>
+                            <li><a href="/">Доставка и оплата</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="dropdown"><a href="/catalog/" class="dropdown-toggle" 1data-toggle="dropdown">Каталог</a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="/catalog/okolostanochnaya-mekhanizatsiya/">Околостаночная механизация</a></li>
+                            <li><a href="/catalog/metallokonstruktsii/">Металлоконструкции</a></li>
+                            <li><a href="/catalog/rolikoviy-konve-r-rolgang/">Роликовий конвеєр  (рольганг)</a></li>
+                            <li><a href="/catalog/vanny-dlya-antiseptirovaniya-drevesiny-/">Ванны для антисептирования древесины </a></li>
+                            <li><a href="/catalog/poperechnyy-nakopitel-s-mekhanizmom-poshtuchnoy-vydachi-/">Поперечный накопитель с механизмом поштучной выдачи </a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="/services/" class="dropdown-toggle" 1data-toggle="dropdown">Услуги</a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="/services/razrabotka-i-proektirovanie-detaley-i-mekhanizmov/">Проектирование индивидуальных изделий из металла</a></li>
+                            <li><a href="/services/nestandartnye-i-individualnye-izdeliya-iz-metalla/">Нестандартные и индивидуальные изделия из металла</a></li>
+                            <li><a href="/services/stroitelnye-raboty/">Сварочные работы всех видов</a></li>
+                            <li><a href="/services/tokarnye-raboty/">Токарные работы</a></li>
+                            <li><a href="/services/plazmennaya-rezka-chpu/">Плазменная резка чпу</a></li>
+                            <li><a href="/services/poroshkovaya-pokraska-metallicheskikh-izdeliy/">Порошковая покраска металлических изделий</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="/info/" class="dropdown-toggle" 1data-toggle="dropdown">Новости</a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="/info/news/">Новости</a></li>
+                            <li><a href="/info/articles/">Статьи</a></li>
+                            <li><a href="/info/pressa-o-nas/">Исследования</a></li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li><a href="/contacts/">Контакты</a></li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+
+                </ul>
+         </div>
+</div>
+<!--/navbar-collapse-->
+</div>
+</div>
+<!-- End Navbar -->
+</div>
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs hidden-sm hidden-xs">
+    <div class="container">
+        <h1 class="pull-left">О нас</h1>
+        <ul class="pull-right breadcrumb">
+            <li id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" itemref="bx_breadcrumb_1">
+
+                <a href="index.html" title="Главная" itemprop="url">
+                    <span itemprop="title">Главная</span>
+                </a>
+            </li>
+            <li id="bx_breadcrumb_1" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+
+                <a href="company.html" title="Компания" itemprop="url">
+                    <span itemprop="title">Компания</span>
+                </a>
+            </li>
+            <li class="active">
+
+                <span>О нас</span>
+            </li>
+            </ul>
+    </div>
+</div>
+<!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+<!--=== Content ===-->
+<div class="container content">
+    <div class="row">
+        <div class="col-md-3">
+
+            <ul class="list-group sidebar-nav-v1" id="sidebar-nav">
+
+                <li class="list-group-item active"><a href="about-us.html">О нас</a></li>
+                <li class="list-group-item "><a href="requisites.html">Реквизиты</a></li>
+                <li class="list-group-item "><a href="delivery.html">Доставка и оплата</a></li>
+
+            </ul>
+
+
+
+        </div>
+        <div class="col-md-9">
+            <p style="text-align: center;">
+                <br>
+            </p>
+            <h2>ООО "Гребенковский завод металлоконструкций"</h2>
+            <p>
+                Направленность работы нашей компании это продажа и изготовление оборудования по обработке дерева и метала. На рынке Украины мы работаем 1 год и воплощаем мечты заказчиков о качественном и доступном оборудовании. Наши главные приоритеты: качество и индивидуальный
+                подход в реализации поставленных задач от заказчика.
+            </p>
+            <p>
+                В настоящее время, наша команда быстро внедряет в производство современные тенденции по улучшению разработки оборудования с высоким производственным ресурсом. Нашим клиентам мы предлагаем стать для надежным поставщиков высоко качественного оборудования.<i>&nbsp;</i>
+            </p>
+            <p>
+                <i><span style="color: #ee1d24;"><b>Главный офис компании находится в Киеве, а завод находится в 100 км. зоне в г. Гребинка, что позволяет предлагать заказчикав выгодную и конкурентную цену.</b></span> </i>
+            </p>
+            <i>
+<p>
+	 Успеху нашей компании мы обязаны своим сотрудникам. Благодаря их исключительному профессионализму и приверженности общему делу, мы можем реализовывать самые сложные и нестандартные проекты.
+</p>
+ </i> </div>
+    </div>
+
+</div>
+<!--=== End Content ===-->
+<!--=== Footer Version 1 ===-->
+<div class="footer-v1">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-3 md-margin-bottom-40 wow fadeIn">
+                    <img width="175" src="img/bx_default_logo-footer.png" height="80" id="logo-footer" class="footer-logo">
+
+
+                    <noindex>
+                        <script type="text/javascript" src="//cabinet.salesupwidget.com/php/1.js" id="salesupwidget1js" data-uid="1813" charset="UTF-8" async></script>
+                    </noindex>
+                    <p>
+                        ООО "ГЗМК" - Завод в Центральной Украине.
+                    </p>
+                    <p>
+                        Мы воплощаем мечты своих заказчиков о качественном и надежном оборудовании. Готовы реализовать самые &nbsp;смелые индивидуальные проекты своих Заказчиков.
+                    </p>
+                </div>
+                <!--/col-md-3-->
+                <!-- End About -->
+
+                <!-- Latest -->
+                <div class="col-md-3 md-margin-bottom-40 wow fadeIn">
+
+                    <div class="headline">
+                        <h2>Разделы сайта</h2></div>
+                    <ul class="list-unstyled link-list">
+
+                        <li><a href="/company/">Компания</a><i class="fa fa-angle-right"></i></li>
+
+                        <li><a href="/catalog/">Каталог</a><i class="fa fa-angle-right"></i></li>
+
+                        <li><a href="/services/">Услуги</a><i class="fa fa-angle-right"></i></li>
+
+                        <li><a href="/info/">Новости</a><i class="fa fa-angle-right"></i></li>
+
+                        <li><a href="/contacts/">Контакты</a><i class="fa fa-angle-right"></i></li>
+
+                        <li>
+                            <a href=""></a><i class="fa fa-angle-right"></i></li>
+
+
+                    </ul>
+
+                </div>
+                <!--/col-md-3-->
+                <!-- End Latest -->
+
+                <!-- Link List -->
+                <div class="col-md-3 md-margin-bottom-40 wow fadeIn">
+                    <div class="posts">
+                        <div class="headline">
+                            <h2>Последние новости</h2></div>
+                        <ul class="list-unstyled latest-list">
+                            <li id="bx_4665576_122">
+                                <a href="/info/news/krupneyshie-proizvoditeli-izdeliy-iz-metalla-v-ukraine-.html">Крупнейшие производители изделий из металла в Украине  </a>
+                                <small>Ноябрь 10, 2016</small>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- Yandex.Metrika informer -->
+                    <!-- <a href="https://metrika.yandex.ua/stat/?id=42688169&from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/42688169/3_0_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: дані за сьогодні (перегляди, візити та унікальні відвідувачі)"
+                                    class="ym-advanced-informer" data-cid="42688169" data-lang="ua"></a> -->
+                    <!-- /Yandex.Metrika informer -->
+
+                    <!-- Yandex.Metrika counter -->
+                    <!--  <script type="text/javascript">
+                                (function(d, w, c) {
+                                    (w[c] = w[c] || []).push(function() {
+                                        try {
+                                            w.yaCounter42688169 = new Ya.Metrika({
+                                                id: 42688169,
+                                                clickmap: true,
+                                                trackLinks: true,
+                                                accurateTrackBounce: true,
+                                                webvisor: true
+                                            });
+                                        } catch (e) {}
+                                    });
+
+                                    var n = d.getElementsByTagName("script")[0],
+                                        s = d.createElement("script"),
+                                        f = function() {
+                                            n.parentNode.insertBefore(s, n);
+                                        };
+                                    s.type = "text/javascript";
+                                    s.async = true;
+                                    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                                    if (w.opera == "[object Opera]") {
+                                        d.addEventListener("DOMContentLoaded", f, false);
+                                    } else {
+                                        f();
+                                    }
+                                })(document, window, "yandex_metrika_callbacks");
+                            </script> -->
+
+                    <!-- /Yandex.Metrika counter -->
+
+
+                    <!-- <script>
+                                (function(i, s, o, g, r, a, m) {
+                                    i['GoogleAnalyticsObject'] = r;
+                                    i[r] = i[r] || function() {
+                                        (i[r].q = i[r].q || []).push(arguments)
+                                    }, i[r].l = 1 * new Date();
+                                    a = s.createElement(o),
+                                        m = s.getElementsByTagName(o)[0];
+                                    a.async = 1;
+                                    a.src = g;
+                                    m.parentNode.insertBefore(a, m)
+                                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                                ga('create', 'UA-91627484-1', 'auto');
+                                ga('require', 'displayfeatures');
+                                ga('send', 'pageview');
+                            </script> -->
+
+
+
+                    <!-- Код тега ремаркетинга Google -->
+                    <!--------------------------------------------------
+С помощью тега ремаркетинга запрещается собирать информацию, по которой можно идентифицировать личность пользователя. Также запрещается размещать тег на страницах с контентом деликатного характера. Подробнее об этих требованиях и о настройке тега читайте на странице http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+                    <script type="text/javascript">
+                        /* <![CDATA[ */
+                        var google_conversion_id = 855546045;
+                        var google_custom_params = window.google_tag_params;
+                        var google_remarketing_only = true;
+                        /* ]]> */
+                    </script>
+                    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+                    </script>
+                    <noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/855546045/?guid=ON&amp;script=0"/>
+</div>
+</noscript> </div>
+                <!--/col-md-3-->
+                <!-- End Link List -->
+
+                <!-- Address -->
+                <div class="col-md-3 map-img md-margin-bottom-40 wow fadeIn">
+
+                    <div class="headline">
+                        <h2>
+                        Наши контакты                       </h2></div>
+                    <address class="md-margin-bottom-40">
+                        <p>
+ <b>ООО "Гребенковский завод металлоконструкций"</b>
+</p>
+ г. Гребенка<br>
+ офис 1234, г. Киев, 119034<br>
+ +38 (067) 465&nbsp;11 05<br>
+ +38 (044) 539&nbsp;37 30<br>
+ E-mail:&nbsp;<a href="mailto:zakaz@gzmk.com.ua">gzmk2016@gmail.com</a>                        </address>
+                </div>
+                <!--/col-md-3-->
+                <!-- End Address -->
+            </div>
+        </div>
+    </div>
+    <!--/footer-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        ООО "ГЗМК" ® Все права защищены.
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-sm-6">
+                    <div id="bx-composite-banner" class="pull-left visible-md-inline visible-lg-inline" style="margin-top: 9px;"></div>
+                    <ul class="footer-socials list-inline">
+                        <li id="bx_3218110189_241">
+                            <a href="https://www.facebook.com/" onclick="return !window.open(this.href)" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li id="bx_3218110189_248">
+                            <a href="https://vk.com" onclick="return !window.open(this.href)" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Вконтакте">
+                                <i class="fa fa-vk"></i>
+                            </a>
+                        </li>
+                        <li id="bx_3218110189_244">
+                            <a href="https://www.linkedin.com/" onclick="return !window.open(this.href)" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li id="bx_3218110189_250">
+                            <a href="https://www.youtube.com/" onclick="return !window.open(this.href)" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Youtube">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                        <li id="bx_3218110189_242">
+                            <a href="https://www.skype.com/" onclick="return !window.open(this.href)" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                        </li>
+                        <li id="bx_3218110189_243">
+                            <a href="https://plus.google.com/" onclick="return !window.open(this.href)" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Social Links -->
+            </div>
+        </div>
+    </div>
+    <!--/copyright-->
+</div>
+<!--=== End Footer Version 1 ===-->
+</div>
+<!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="plugins/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="plugins/scroll_to_top.js"></script>
+<script type="text/javascript" src="plugins/smooth_scroll.js"></script>
+<script type="text/javascript" src="plugins/jquery_parallax.js"></script>
+<script type="text/javascript" src="plugins/owl-carousel.js"></script>
+<script type="text/javascript" src="plugins/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="plugins/cubeportfolio.min.js"></script>
+<script type="text/javascript" src="plugins/revolution-slider.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="plugins/revolution-slider.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="plugins/mCustomScrollbar.concat.min.js"></script>
+<!-- JS Customization -->
+<!-- <script type="text/javascript" src="/bitrix/templates/apsel_business_strawberry/assets/js/custom.js?147826530645"></script> -->
+<!-- JS Page Level -->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/plugins/revolution-slider.js"></script>
+<script type="text/javascript" src="js/plugins/cube-portfolio-2.js"></script>
+<script type="text/javascript" src="js/plugins/owl-carousel.js"></script>
+<script type="text/javascript" src="js/plugins/fancy-box.js"></script>
+<script type="text/javascript" src="js/plugins/image-hover.modernizr.js"></script>
+<!-- <script type="text/javascript" src=""></script> -->
+<script type="text/javascript" src="js/plugins/style-switcher.js"></script>
+
+
+<script type="text/javascript" src="js/plugins/sticky-kit.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.handleinitStickyBlock();
+        OwlCarousel.initOwlCarousel();
+        FancyBox.initFancybox();
+        RevolutionSlider.initRSfullWidth();
+        StyleSwitcher.initStyleSwitcher();
+
+        $(".various").fancybox({
+            maxWidth: 700,
+            maxHeight: 650,
+            autoSize: true,
+            /*maxWidth  : 600,
+            maxHeight   : 450,
+            minWidth    : 260,
+            minHeight   : 450,
+            fitToView   : false,
+            width       : '100%',
+            height      : '100%',
+            autoSize    : true,
+            closeClick  : false,
+            openEffect  : 'none',
+            closeEffect : 'none'*/
+        });
+    });
+    $(window).on('load', function() {
+        var $preloader = $('#page-preloader'),
+            $spinner = $preloader.find('.spinner0');
+        $spinner.fadeOut(50).fadeOut(100);
+        $preloader.delay(100).fadeOut(300);
+    });
+</script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="/bitrix/templates/apsel_business_strawberry/assets/plugins/respond.js?14782653069527"></script>
+    <script type="text/javascript" src="/bitrix/templates/apsel_business_strawberry/assets/plugins/html5shiv.js?147826530610189"></script>
+    <script type="text/javascript" src="/bitrix/templates/apsel_business_strawberry/assets/plugins/placeholder-IE-fixes.js?14782653062768"></script>
+<![endif]-->
+<div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+/* Add here all your css styles (customizations) */
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.2
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	/*color: #FFF;*/
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 370px;
+	background: url(../img/AjaxLoader.gif) no-repeat center center
+}
+
+	.owl-carousel {
+		margin-bottom:20px;
+	}
+	.owl-theme .owl-controls .owl-buttons div {
+		opacity:1; /*color:#333;*/
+		filter: Alpha(Opacity=100);
+		background:#fff; border:#eee 1px solid;
+		line-height: 22px;
+
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+				border-radius: 3px;
+	}
+	.owl-theme .owl-controls .owl-buttons div:hover {
+		background:#F5F7F7;
+	}
+
+	.controlls-over .owl-controls {
+		position:absolute;
+		top:50%; left:0; right:0; bottom:0;
+		margin-top:-20px;
+		z-index: 10;
+	}
+	.controlls-over .owl-controls .owl-prev {
+		float:left;
+	}
+	.controlls-over .owl-controls .owl-next {
+		float:right;
+	}
+	.controlls-over .owl-pagination {
+		position:absolute;
+		bottom:0; left:0; right:0;
+	}
+	.owl-theme.controlls-over .owl-controls .owl-page {
+		background:rgba(0,0,0,0.3);
+
+	}
+	.owl-theme.controlls-over .owl-controls .owl-page:first-child {
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.owl-theme.controlls-over .owl-controls .owl-page:last-child {
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.owl-theme.controlls-over .owl-controls .owl-page span {
+		background:#fff;
+	}
+
+	/* top text caption */
+	/*.owl-carousel .owl-item div {
+		position:relative;
+	}*/
+	.owl-carousel .owl-caption {
+		padding:10px;
+		position:absolute !important;
+		left:0; top:0; right:0;
+		margin-top:0; max-width:100%;
+		background:rgba(0,0,0,0.3);
+		display:block; color:#fff;
+	}
+
+	.owl-carousel .owl-caption p {
+		color:#fff;
+		font-size:13px;
+		line-height:20px;
+		padding:0; margin:0;
+	}
+	.owl-carousel .owl-caption h1,
+	.owl-carousel .owl-caption h1 a,
+	.owl-carousel .owl-caption h2,
+	.owl-carousel .owl-caption h2 a,
+	.owl-carousel .owl-caption h3,
+	.owl-carousel .owl-caption h3 a {
+		color:#fff;
+		font-size:21px;
+		line-height:21px;
+		font-weight:bold;
+		margin-bottom:10px;
+	}
+	.owl-carousel .owl-caption a {
+		color:#fff;
+		font-weight:bold;
+	}
